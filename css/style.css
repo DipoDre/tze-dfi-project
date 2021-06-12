@@ -1,0 +1,130 @@
+/*  Universal selector */
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+    text-align: center;
+}
+
+body {
+    color: white;
+    background-image: url('../images/clouds-colorful2.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.bg-orange-b, #get-weather:focus {
+    background-color: #f67500;
+    box-shadow: none !important;
+}
+
+#city-input:focus, #country-input:focus {
+    box-shadow: none !important;
+}
+
+.alert {
+    margin: 0 auto;
+}
+
+#am-pm {
+    font-size: 15px;
+}
+
+.more-details {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#current-weather-items {
+    display: flex;
+    flex-direction: column;
+    background: rgba(24, 24, 27, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.others .weather-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-scroll {
+    background: rgba(24, 24, 27, 0.8);
+    color: white;
+}
+
+.future-forecast {
+    background: rgba(24, 24, 27, 0.8);
+    padding: 25px;
+    width: 100%;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 200px !important;
+}
+
+.future-forecast .box {
+    min-width: 100%;
+}
+
+.future-forecast .boxIcon {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.future-forecast .boxDesc {
+    height: 100px;
+}
+
+.future-forecast .weather-forecast .day {
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.future-forecast .weather-forecast .temp {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast .fdesc {
+    width: 100%;
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width:1530px) {
+    .show-hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    #current-weather-items {
+        width: 90%;
+    }
+}
+
